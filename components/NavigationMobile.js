@@ -3,21 +3,25 @@ import React, { useState } from "react"
 
 const NavigationMobile = ({ locale, locales }) => {
 
-  const resolveMovies = {
-    en: 'Movies',
-    nl: 'Films',
+  const resolveNewYork = {
+    en: 'New York',
+    nl: 'New York',
   }
-  const resolvePeople = {
-    en: 'People',
-    nl: 'Mensen',
+  const resolveBarcelona = {
+    en: 'Barcelona',
+    nl: 'Barcelona',
   }
-  const resolveNews = {
-    en: 'News',
-    nl: 'Nieuws',
+  const resolvePeking = {
+    en: 'Peking',
+    nl: 'Peking',
   }
-  const resolveMerchandise = {
-    en: 'Shop',
-    nl: 'Winkel',
+  const resolveNairobi = {
+    en: 'Nairobi',
+    nl: 'Nairobi',
+  }
+  const resolveSydney = {
+    en: 'Sydney',
+    nl: 'Sydney',
   }
   function togglenav() {
     setNavstate(result.data.stories);
@@ -44,16 +48,19 @@ const NavigationMobile = ({ locale, locales }) => {
         {navstate&&<div className={styles.navlinkswrapper}>
           <div className={styles.navlinks}>
             <div className={styles.navlink}>
-              <a href={`${defaultLocale}pages/movies`} className={styles.movie}>{resolveMovies[locale]}</a>
+              <a href={`${defaultLocale}pages/new-york`} className={styles.movie}>{resolveNewYork[locale]}</a>
             </div>
             <div className={styles.navlink}>
-              <a href={`${defaultLocale}pages/people`} className={styles.personality}>{resolvePeople[locale]}</a>
+              <a href={`${defaultLocale}pages/barcelona`} className={styles.personality}>{resolveBarcelona[locale]}</a>
             </div>
             <div className={styles.navlink}>
-              <a href={`${defaultLocale}pages/news`} className={styles.newsitem}>{resolveNews[locale]}</a>
+              <a href={`${defaultLocale}pages/peking`} className={styles.newsitem}>{resolvePeking[locale]}</a>
             </div>
             <div className={styles.navlink}>
-              <a href={`${defaultLocale}pages/shop`} className={styles.product}>{resolveMerchandise[locale]}</a>
+              <a href={`${defaultLocale}pages/nairobi`} className={styles.product}>{resolveNairobi[locale]}</a>
+            </div>
+            <div className={styles.navlink}>
+              <a href={`${defaultLocale}pages/sydney`} className={styles.product}>{resolveSydney[locale]}</a>
             </div>
           </div>
           <div className={styles.navlocales}>

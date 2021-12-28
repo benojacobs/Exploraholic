@@ -1,7 +1,6 @@
 @import '../styles/colors';
 
 a.item {
-  border: 10px solid black;
   margin-bottom: 20px;
   margin-right: 0;
   display: block;
@@ -19,10 +18,10 @@ a.item {
   .mainpicture {
     background-size: cover;
     background-position: center;
-    height: 200px;
+    width: 100%;
 
     @media (min-width: 768px) {
-      height: 280px;
+      height: 200px;
     }
   }
 

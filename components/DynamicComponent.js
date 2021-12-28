@@ -24,7 +24,9 @@ import EmailOptin from './EmailOptin'
 import TwoCol from './TwoCol'
 import Title from './Title'
 import TopMovies from './TopMovies'
-
+import Hotel from './Hotel'
+import HotelList from './HotelList'
+import Image from './Image'
 const Components = {
   'teaser': Teaser,
   'grid': Grid,
@@ -51,7 +53,11 @@ const Components = {
   'emailoptin':EmailOptin,
   'twocol':TwoCol,
   'title':Title,
-  'topmovies':TopMovies
+  'topmovies':TopMovies,
+  'hotel':Hotel,
+  'hotelList':HotelList,
+  'image':Image,
+  
 }
 
 
