@@ -4,7 +4,7 @@ import styles from "../styles/SmallCard.module.scss"
 
 
 
-const SmallCard = ({ lang, title, short, picture, url, type, price }) => {
+const SmallCard = ({ lang, title, short, picture, url, type, price, rating }) => {
 
   return (
     <a href={`/${url}`} className={`bg-shadow-${type} ${styles.item}`}>
@@ -16,6 +16,7 @@ const SmallCard = ({ lang, title, short, picture, url, type, price }) => {
           <div className={styles.title}>
             {title}
           </div>
+          {rating && <div className={styles.rating}>{rating}</div>}
         </div>
       </div>
     </a>
