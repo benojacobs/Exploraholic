@@ -19,8 +19,11 @@ const Intro = ({data, level}) => {
         <div className={styles.introduction}>
           {render(content.introduction)}
         </div>
+        <div className={styles.description}>
+          {render(content.description)}
+        </div>
 
-        <p>{content.text}</p>
+      
       </div>
     </SbEditable>
   )
