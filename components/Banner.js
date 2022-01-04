@@ -7,7 +7,6 @@ import { getData } from "../utils/storyblok"
 
 const Banner = ({ data, level }) => {
     var content = data;
-    console.log(content)
   //returning the HTML
   return (
     <SbEditable content={content} key={content._uid}>

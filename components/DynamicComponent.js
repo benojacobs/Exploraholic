@@ -30,6 +30,7 @@ import Restaurant from './Restaurant'
 import RestaurantList from './RestaurantList'
 import Image from './Image'
 import Banner from './Banner'
+import HomeTileList from './HomeTileList'
 const Components = {
   'teaser': Teaser,
   'grid': Grid,
@@ -63,7 +64,7 @@ const Components = {
   'restaurantList':RestaurantList,
   'image':Image,
   'banner':Banner,
-  
+  'hometilelist':HomeTileList,
 }
 
 
