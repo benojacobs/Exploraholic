@@ -4,7 +4,7 @@ import styles from "../styles/SmallCard.module.scss"
 import { MapPin, Star, DollarSign } from 'react-feather';
 
 
-const SmallCard = ({ lang, title, short, picture, url, type, price, rating }) => {
+const SmallCard = ({ lang, title, short, picture, url, type, price, rating, location, description }) => {
 
   return (
     <div className={styles.item}>
@@ -17,7 +17,7 @@ const SmallCard = ({ lang, title, short, picture, url, type, price, rating }) =>
         <div className={`${styles.address} ${styles.block}`}><MapPin size={12}/><span>Paleisstraat 2</span></div>
         {rating && <div className={`${styles.rating} ${styles.block}`}><div className={styles.block}><Star size={12}/>Rating</div><span>{rating}/10</span></div>}
         {price && <div className={`${styles.price} ${styles.block}`}><div className={styles.block}><DollarSign size={12}/>Price</div>${price}</div>}
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sollicitudin elementum dolor.</p>
+        {description && <p className={styles.description}> {render(description)} </p>}
         <a href={`/${url}`} className={styles.button}>Details</a>
       </div>
     </div>

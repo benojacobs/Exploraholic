@@ -17,6 +17,7 @@ const Hotel = ({ data, level }) => {
       <main>
         <div className={styles.image} style={{ backgroundImage: `url("${content.mainpicture.filename}")` }}></div>
         <h2>{content.title}</h2>
+        <h2>{render(content.description)}</h2>
         <p>{content.rating}</p>
         <p>{content.price}</p>
       </main>

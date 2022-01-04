@@ -62,6 +62,16 @@
       border-bottom: 1px solid #F0F0F0;
     }
 
+    .description {
+      max-height: 150px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+
+      p {
+        margin: 0;
+      }
+    }
+
     .button {
       background-color: #F9D248;
       color: #FFF;
