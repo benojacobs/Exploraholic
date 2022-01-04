@@ -29,6 +29,7 @@ import HotelList from './HotelList'
 import Restaurant from './Restaurant'
 import RestaurantList from './RestaurantList'
 import Image from './Image'
+import Banner from './Banner'
 const Components = {
   'teaser': Teaser,
   'grid': Grid,
@@ -61,6 +62,7 @@ const Components = {
   'restaurant':Restaurant,
   'restaurantList':RestaurantList,
   'image':Image,
+  'banner':Banner,
   
 }
 
