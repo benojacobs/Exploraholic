@@ -6,7 +6,7 @@
 
   background-color: #13161E;
   color: #727C95;
-  padding: 80px 0;
+  padding: 54px 0;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: 1fr;
@@ -26,6 +26,21 @@
 
   .footer {
     grid-column: 2 / span 10;
+  }
+
+  .footerContent {
+    display: flex;
+    justify-content: space-between;
+
+    .socials {
+      display: flex;
+      flex-direction: column;
+      a {
+      padding: 8px 0;
+      color: #727C95;
+      text-decoration: none;
+      }
+    }
   }
 
   @media (min-width: 1024px) {

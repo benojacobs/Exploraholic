@@ -1,4 +1,5 @@
 import styles from "../styles/Footer.module.scss"
+import Image from "next/image"
 
 const Footer = () => {
   return (
@@ -27,10 +28,13 @@ const Footer = () => {
             className=""
           />
         </div>
-        <div>
-          <p>Facebook</p>
-          <p>Instagram</p>
-          <p>Twitter</p>
+        <div className={styles.footerContent}>
+          <img src="/logo-white.svg" alt="Exploreaholic Logo" width="115" height="54" />
+          <div className={styles.socials}>
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+          </div>
         </div>
       </div>
     </footer>

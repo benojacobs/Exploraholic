@@ -39,7 +39,7 @@ const Navigation = ({ locale, locales }) => {
               alt="IMDBPlus Logo"
               className=""
             /> */}
-            <Image src="/logo-colored-full.png" alt="IMDBPlus Logo" width="128" height="25" />
+            <Image src="/logo.svg" alt="Exploreaholic Logo" width="115" height="54" />
           </a>
         </div>
         <div className={styles.navlinkswrapper}>
