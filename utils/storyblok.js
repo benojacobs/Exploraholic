@@ -7,6 +7,7 @@ const Storyblok = new StoryblokClient({
     clear: "auto",
     type: "memory",
   },
+  
 });
 
 export async function getAllItems(components, locale, sort_by) {

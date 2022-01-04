@@ -1,7 +1,7 @@
 @import '../styles/colors';
 
-a.item {
-  margin-bottom: 20px;
+.item {
+  margin-bottom: 8px;
   margin-right: 0;
   display: block;
   position: relative;
@@ -12,7 +12,6 @@ a.item {
 
   @media (min-width: 768px) {
     width: 248px;
-    margin-right: 20px;
   }
 
   .mainpicture {
@@ -25,31 +24,55 @@ a.item {
     }
   }
 
-  .price {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    background-color: white;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    font-weight: 800;
-    border: 5px solid black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
   .textpart {
     text-decoration: none !important;
     padding: 20px;
 
     .title {
       font-size: 1.2em;
-      font-weight: 800;
+      font-weight: 700;
+      padding-bottom: .5rem;
     }
 
-    .short {}
+    .block {
+      display: flex;
+      align-items: center;
+
+      svg {
+        margin-right: 4px;
+      }
+    }
+
+    .address {
+      padding-bottom: 1rem;
+      margin-bottom: 1rem;
+      border-bottom: 1px solid #F0F0F0;
+      color: #B5BBC2;
+      font-weight: 600;
+    }
+
+    .rating, .price {
+      justify-content: space-between;
+    }
+
+    .price {
+      padding-top: .5rem;
+      padding-bottom: 1rem;
+      margin-bottom: 1rem;
+      border-bottom: 1px solid #F0F0F0;
+    }
+
+    .button {
+      background-color: #F9D248;
+      color: #FFF;
+      border-radius: 5rem;
+      padding: .5rem 1rem;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: 600;
+      letter-spacing: .05rem;
+      font-size: 12px;
+    }
   }
 
 

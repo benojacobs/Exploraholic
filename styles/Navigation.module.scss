@@ -7,8 +7,6 @@
 }
 
 .navigation {
-  font-family: 'Karla', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: 900;
   font-size: .9rem;
   display: flex;
@@ -39,20 +37,7 @@
           border: 5px solid transparent;
 
           &:hover {
-            border: 5px solid black;
-          }
-
-          &.movie:hover {
-            border: 5px solid $color-primary;
-          }
-          &.personality:hover {
-            border: 5px solid $color-primary-personality;
-          }
-          &.newsitem:hover {
-            border: 5px solid $color-primary-newsitem;
-          }
-          &.product:hover {
-            border: 5px solid $color-primary-product;
+            border-bottom: 5px solid #F9D248;
           }
         }
 
@@ -72,9 +57,6 @@
         padding: 5px 10px;
         border: 5px solid transparent;
 
-        &:hover {
-          border: 5px solid black;
-        }
       }
     }
   }

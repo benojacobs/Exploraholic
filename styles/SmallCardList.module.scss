@@ -2,8 +2,6 @@
 
 
 .itemgallery {
-  margin-top: 80px;
-
   .title {
     font-size: 1.4em;
     font-weight: 800;
@@ -23,9 +21,12 @@
 
     .smallcardwrapper {
       display: inline-block;
-      margin-bottom: 10px;
+      margin-bottom: 24px;
+      margin-right: 24px;
       display: flex;
       width: 100%;
+      border: 1px solid #F0F0F0;
+      border-radius: 1rem;
 
       @media (min-width: 768px) {
         width: auto;

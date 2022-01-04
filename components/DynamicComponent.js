@@ -26,6 +26,8 @@ import Title from './Title'
 import TopMovies from './TopMovies'
 import Hotel from './Hotel'
 import HotelList from './HotelList'
+import Restaurant from './Restaurant'
+import RestaurantList from './RestaurantList'
 import Image from './Image'
 const Components = {
   'teaser': Teaser,
@@ -56,6 +58,8 @@ const Components = {
   'topmovies':TopMovies,
   'hotel':Hotel,
   'hotelList':HotelList,
+  'restaurant':Restaurant,
+  'restaurantList':RestaurantList,
   'image':Image,
   
 }
