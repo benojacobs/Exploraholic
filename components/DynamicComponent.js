@@ -12,11 +12,11 @@ import Personality from './Personality'
 import Studio from './Studio'
 import Genre from './Genre'
 import Country from './Country'
-import NewsItem from './NewsItem'
+import Experience from './Experience'
 import FrontpageSlideshow from './FrontpageSlideshow'
 import Intro from './Intro'
 import MovieList from './MovieList'
-import NewsItemList from './NewsItemList'
+import ExperienceList from './ExperienceList'
 import PersonalityList from './PersonalityList'
 import ProductList from './ProductList'
 import Product from './Product'
@@ -45,11 +45,11 @@ const Components = {
   'studio': Studio,
   'genre' : Genre,
   'country' : Country,
-  'newsitem': NewsItem,
+  'experience': Experience,
   'frontpageslideshow':FrontpageSlideshow,
   'intro':Intro,
   'movielist':MovieList,
-  'newsitemlist':NewsItemList,
+  'experiencelist':ExperienceList,
   'productlist':ProductList,
   'productcategory':Placeholder,
   'personalitylist':PersonalityList,

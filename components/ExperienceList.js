@@ -1,18 +1,18 @@
 import React, { useState } from "react"
 import SbEditable from "storyblok-react"
 import { render } from "storyblok-rich-text-react-renderer"
-import styles from "../styles/NewsitemList.module.scss" 
+import styles from "../styles/ExperienceList.module.scss" 
 import { getAllItems } from "../utils/storyblok"
 import SmallCardList from "./SmallCardList"
 
-const NewsItemList = ({ data, level, locale }) => {
+const ExperienceList = ({ data, level, locale }) => {
   if (level === 'data') {
     var content = data.story.content;
   } else {
     var content = data;
   }
   const [items, setItems] = useState([]);
-  getAllItems('newsitem', locale).then(
+  getAllItems('experience', locale).then(
     function (result) {
       setItems(result.data.stories);
     });
@@ -26,4 +26,4 @@ const NewsItemList = ({ data, level, locale }) => {
   );
 };
 
-export default NewsItemList;
+export default ExperienceList;

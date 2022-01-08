@@ -1,47 +1,59 @@
 @import '../styles/colors';
 .carouselwrapper{
+  margin-left: 50%;
+  width: 100vw;
+  transform: translateX(-50%);
+  padding:40px 0;
+  margin-top: 56px;
+  background-color: #F5F5F7;
+  position: relative;
   display: grid;
-  box-shadow: 10px 10px 0px black;
-  margin:40px 0;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto 1fr auto;
+  grid-gap: 24px;
+  gap: 24px;
 }
+
+.carouselwrapperinner {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  grid-column: 3/span 8;
+}
+
+.carouseltitle {
+  font-family: "PT Serif", serif;
+}
+
+.itemcontainer {
+  text-decoration: none;
+}
+
+.avatar {
+  width: 64px;
+  height: 64px;
+  background-size: cover;
+  border-radius: 50%;
+  position: absolute;
+  left: -32px;
+}
+
 .item {
-  display: grid;
-  height: 400px;
-  @media (min-width: 768px) {
-    height: 500px;
+  background-color: #FFFFFF;
+  padding: 32px 24px 32px 48px;
+  margin: 0 24px;
+  border-radius: 8px;
+  position: relative;
+  .meta {
+    color: #B5BBC2;
   }
-  @media (min-width: 1024px) {
-    height: 600px;
-  }
-  .mainpicture{
-    background-size: cover;
-    img{
-      // width: 100%;
-      // height: 100%;
-    }
-  }
-  .newsiteminfo{
-    position:absolute;
-      bottom: 40px;
-      width: 40%;
-      min-width: 300px;
-      max-width: 600px;
-      background:black;
-      color: white;
-      padding: 20px;
+
+  .experienceinfo{
     .title{
-      font-family: 'Bungee Shade', cursive;
       font-size: 1.2em;
-      line-height: 1.3em;
-      @media (min-width: 768px) {
-        font-size: 1.5em;
-      }
-      @media (min-width: 1024px) {
-        font-size: 2em;
-      }
     }
     .short{
-      font-size: 18px;
+      font-size: 14px;
     }
   }
 

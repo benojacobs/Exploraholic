@@ -1,12 +1,12 @@
 import React from "react"
 import SbEditable from "storyblok-react"
 import { render } from "storyblok-rich-text-react-renderer"
-import styles from "../styles/NewsItem.module.scss"
+import styles from "../styles/Experience.module.scss"
 import SmallCardList from "./SmallCardList"
 
 
 
-const NewsItem = ({ data, level }) => {
+const Experience = ({ data, level }) => {
   var movies = [];
   var personalities = [];
   //enriching data
@@ -30,7 +30,7 @@ const NewsItem = ({ data, level }) => {
           <h1 className={styles.title}>
             {content.title}
           </h1>
-          <div className={styles.mainpicture} style={{ backgroundImage: `url("${content.mainpicture.filename}")` }}>
+          <div className={styles.mainpicture} style={{ backgroundImage: `url("${content.image.filename}")` }}>
           </div>
           <div className={styles.short}>
             {render(content.short)}
@@ -38,13 +38,10 @@ const NewsItem = ({ data, level }) => {
           <div className={styles.article}>
             {render(content.article)}
           </div>
-          {movies && movies.length > 0 && <SmallCardList items={movies} title="Related movies" type="movie"></SmallCardList>}
-          {personalities && personalities.length > 0 && <SmallCardList items={personalities} title="Related personalities" type="personality"></SmallCardList>}
-      
         </div>
       </main>
     </SbEditable>
   )
 }
 
-export default NewsItem
+export default Experience
