@@ -31,6 +31,7 @@ import RestaurantList from './RestaurantList'
 import Image from './Image'
 import Banner from './Banner'
 import HomeTileList from './HomeTileList'
+import Form from './Form'
 const Components = {
   'teaser': Teaser,
   'grid': Grid,
@@ -65,6 +66,7 @@ const Components = {
   'image':Image,
   'banner':Banner,
   'hometilelist':HomeTileList,
+  'form':Form
 }
 
 
