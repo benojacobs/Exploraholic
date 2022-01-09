@@ -16,9 +16,13 @@ const Restaurant = ({ data, level }) => {
     <SbEditable content={content} key={content._uid}>
       <main>
         <div className={styles.image} style={{ backgroundImage: `url("${content.mainpicture.filename}")` }}></div>
-        <h2>{content.title}</h2>
-        <p>{content.rating}</p>
-        <p>{content.price}</p>
+        <h1 className={styles.hoteltitle}>{content.title}</h1>
+        <p className={styles.location}>{content.Location}</p>
+        <div className={styles.pills}>
+          <p className={styles.pill}>Rating: {content.rating}/10</p>
+          <p className={styles.pill}>Price: {content.price}</p>
+        </div>
+        <p className={styles.description}>{render(content.description)}</p>
       </main>
     </SbEditable>
   )
