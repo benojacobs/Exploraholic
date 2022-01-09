@@ -18,7 +18,7 @@ const SmallCard = ({ lang, title, short, picture, url, type, price, rating, loca
         {rating && <div className={`${styles.rating} ${styles.block}`}><div className={styles.block}><Star size={12}/>Rating</div><span>{rating}/10</span></div>}
         {price && <div className={`${styles.price} ${styles.block}`}><div className={styles.block}><DollarSign size={12}/>Price</div>${price}</div>}
         {description && <p className={styles.description}> {render(description)} </p>}
-        <a href={`/${url}`} className={styles.button}>Details</a>
+        <a href={`${lang}/${url}`} className={styles.button}>Details</a>
       </div>
     </div>
   )
