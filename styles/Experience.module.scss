@@ -1,6 +1,6 @@
 @import '../styles/colors';
 
-.newsitem {
+.experience {
   .title{
 
   }
@@ -12,10 +12,53 @@
     box-shadow: inset 0 0 0px 10px #000;
     margin-bottom: 40px;
   }
-  .short{
-
-  }
   .article{
-    
+    margin-bottom: 64px;
+  }
+
+  .avatar {
+    width: 56px;
+    height: 56px;
+    background-size: cover;
+    border-radius: 50%;
+    margin-right: 16px;
+  }
+
+  .flex {
+    display: flex;
+    align-items: center;
+  }
+
+  .meta {
+    color: #B5BBC2;
+  }
+
+  .author {
+    font-weight: 600;
+    padding-bottom: 4px;
+  }
+
+  .image {
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .pills {
+    display: flex;
+  }
+  
+  .pill {
+    background-color: #F9D248;
+    color: #FFF;
+    border-radius: 5rem;
+    padding: .5rem 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: .05rem;
+    font-size: 12px;
+    margin-right: 12px;
   }
 }
