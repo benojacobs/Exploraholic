@@ -49,6 +49,12 @@
       border-bottom: 1px solid #F0F0F0;
       color: #B5BBC2;
       font-weight: 600;
+
+      svg {
+        min-width: 12px;
+        align-self: flex-start;
+        padding-top: 3px;
+      }
     }
 
     .rating, .price {
