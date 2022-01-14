@@ -1,5 +1,6 @@
 import styles from "../styles/Footer.module.scss"
 import Image from "next/image"
+import EmailOptin from "./EmailOptin"
 
 const Footer = () => {
   return (
@@ -28,6 +29,9 @@ const Footer = () => {
             className=""
           />
         </div>
+        <div>
+          <EmailOptin />
+        </div>
         <div className={styles.footerContent}>
           <img src="/logo-white.svg" alt="Exploreaholic Logo" width="115" height="54" />
           <div className={styles.socials}>
@@ -36,6 +40,7 @@ const Footer = () => {
             <a href="#">Twitter</a>
           </div>
         </div>
+      
       </div>
     </footer>
 
